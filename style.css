@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    /* background-color: rgb(2, 2, 32); */
+    background-color: aliceblue;
+    padding: 30px 50px;
+}
+
+.top{
+    background-color: rgb(18, 68, 112);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    border-radius: 50px;
+    position: static;
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+}
+
+.links{
+    display: flex;
+    margin-left: 20px;
+}
+
+.links a{
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.btn a{
+    text-decoration: none;
+    background-color:  rgb(2, 2, 32);
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.welcome h1{
+    border-bottom: 5px solid rgb(18, 68, 112);
+}
+
+.btn-2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-2 a{
+    text-decoration: none;
+    background-color:  rgb(2, 2, 32);
+    color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.img img{
+    height: 400px;
+}
+
+.about{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty{
+    height: 5px;
+    width: 300px;
+    background-color: red;
+}
+
+.about h1{
+    background-color: rgb(18, 68, 112);
+    color: aliceblue;
+    padding: 0px 10px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.explained{
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 10px 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.explained p{
+    text-align: justify;
+}
+
+.btn-3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-3 a{
+    text-decoration: none;
+    background-color:  rgb(2, 2, 32);
+    color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+/* faq section */
+
+.faq{
+    margin-top: 50px;
+    background-color: rgb(18, 68, 112);
+    padding: 50px 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background-color: #eaeaea;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.active .accordion-content {
+    display: block;
+}
+
+.slack{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    height: 5px;
+    width: 400px;
+    background-color: rgb(77, 40, 40);
+}
+
+.animate-3 a{
+    font-size: 60px;
+    margin-left: 40%;
+}
+
+
+
+
+/* animate section */
+.animate{
+    opacity: 2;
+    transform: translatey(20px);
+    animation-name: moveup;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+ }
+ 
+ @keyframes moveup{
+      100%{
+       opacity: 1;
+       transform: translatey(5px);
+      }
+ }
+
+ .animate-2{
+    opacity: 1;
+    transform: translatey(10px);
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+ }
+ 
+ @keyframes spin{
+      100%{
+       opacity: 1;
+       transform: translatey(5px);
+      }
+ }
+
+ .animate-3{
+    opacity: 2;
+    transform: translatey(20px);
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+ }
+ 
+ @keyframes bounce{
+      100%{
+       opacity: 1;
+       transform: translatey(5px);
+      }
+ }
+
+ 
+
+
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 600px) {
+     body{
+        background-color: aliceblue;
+        padding: 10px 5px;
+     }
+
+     .top{
+        background-color: rgb(18, 68, 112);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-radius: 0px;
+    }
+    
+    .logo img{
+        width: 70px;
+        height: 30px;
+    }
+
+    .links{
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .links a{
+        color: aliceblue;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    
+    .btn a{
+        text-decoration: none;
+        background-color:  rgb(2, 2, 32);
+        color: aliceblue;
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-size: 10px;
+    }
+
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    
+    .welcome h1{
+        border-bottom: 0px solid rgb(18, 68, 112);
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .img img{
+        height: 250px;
+        width:  100%;
+        margin-top: 5px;
+    }
+
+    .about{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .empty{
+        height: 5px;
+        width: 100px;
+        background-color: red;
+    }
+    
+    .about h1{
+        background-color: rgb(18, 68, 112);
+        color: aliceblue;
+        padding: 0px 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .explained{
+        margin-top: 20px;
+        border: 1px solid black;
+        padding: 10px 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .explained p{
+        text-align: justify;
+    }
+
+    .slack{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    height: 5px;
+    width: 200px;
+    background-color: rgb(77, 40, 40);
+}
+
+.animate-3 a{
+    font-size: 60px;
+    margin-left: 35%;
+}
+
+.slack p{
+font-size: 15px;
+text-align: center;
+}  
+
+}
