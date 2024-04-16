@@ -127,6 +127,15 @@ body{
     padding: 50px 5px;
 }
 
+.chat-bot i{
+    font-size: 50px;
+    align-items: center;
+    color: green;
+    float: right;
+    margin-right: 10px;
+  }
+
+
 .container {
     max-width: 800px;
     margin: 50px auto;
